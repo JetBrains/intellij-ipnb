@@ -1,0 +1,24 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.3.12"
+}
+
+allprojects {
+    apply plugin: 'org.jetbrains.intellij'
+    sourceSets {
+        main {
+            java.srcDirs 'src'
+            resources.srcDirs 'resources'
+        }
+
+        test {
+            java.srcDirs 'testSrc'
+            resources.srcDirs 'testResources'
+        }
+    }
+}
+
+intellij {
+    pluginName 'IPython Notebook'
+    plugins "PythonCore:2018.3.183.4284.148"
+    version 'IU-183-EAP-SNAPSHOT'
+}

@@ -9,6 +9,7 @@ import com.intellij.openapi.options.ex.Settings;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.ui.ClickListener;
+import com.intellij.ui.JBColor;
 import com.intellij.ui.components.JBTextField;
 import com.intellij.util.PlatformUtils;
 import com.intellij.util.ui.JBUI;
@@ -37,7 +38,7 @@ public class IpnbConfigurable implements SearchableConfigurable {
   public IpnbConfigurable(@NotNull Project project) {
     myProject = project;
     myProPanel.setVisible(PlatformUtils.isPyCharmPro() || PlatformUtils.isIdeaUltimate());
-    myInterpreterSetupLinkLabel.setForeground(JBUI.CurrentTheme.Link.linkColor());
+    myInterpreterSetupLinkLabel.setForeground(new JBColor(new Color(0x589df6), new Color(0x589df6)));
     myInterpreterSetupLinkLabel.setCursor(new Cursor(Cursor.HAND_CURSOR));
     createNavigateToInterpreterSettingsListener().installOn(myInterpreterSetupLinkLabel);
 
