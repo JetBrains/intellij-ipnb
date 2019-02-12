@@ -3,7 +3,8 @@
 # Using Jupyter notebook in PyCharm
 
 ## Before you start
-This tutorial describes support for Jupyter notebook in the PyCharm IDE 2018.3 and its previous versions. Refer to the [PyCharm Web Help](https://www.jetbrains.com/help/pycharm/ipython-notebook-support.html) for more information about the current status of support for Jupyter notebook
+This tutorial describes support for Jupyter notebook in the PyCharm IDE 2018.3 and its previous versions. Refer to the [PyCharm Web Help](https://www.jetbrains.com/help/pycharm/ipython-notebook-support.html) for more information about the current status of support for Jupyter notebook.
+
 Prior to executing the tasks of this tutorial, make sure that the following prerequisites are met:
 
 * You have a Python project already created. 
